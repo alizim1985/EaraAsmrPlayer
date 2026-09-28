@@ -23,7 +23,7 @@ internal object SmbClientFactory {
     setProperty("jcifs.smb.client.responseTimeout","20000"); setProperty("jcifs.smb.client.soTimeout","45000")
    }
    val b=BaseContext(PropertyConfiguration(p))
-   val a=if(x.username.isBlank())b.withGuestCredentials() else b.withCredentials(NtlmPasswordAuthenticator(x.domain,x.username,x.password))
+   val a=if(x.username.isBlank())b.withGuestCrendentials() else b.withCredentials(NtlmPasswordAuthenticator(x.domain,x.username,x.password))
    cachedKey=key;cachedContext=a;a
   }}
  }
