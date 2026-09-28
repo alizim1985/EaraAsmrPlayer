@@ -62,7 +62,7 @@ class SmbSettingsActivity : Activity() {
             content.addView(TextView(this).apply { text = label; setPadding(0, dp(10), 0, 0) })
             return EditText(this).apply {
                 hint = hintText
-                singleLine = true
+                setSingleLine(true)
                 content.addView(this)
             }
         }
