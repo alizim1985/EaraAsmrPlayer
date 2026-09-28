@@ -40,3 +40,4 @@ jobs:
           name: EaraAsmrPlayer-1.2.3-SMB3-nonroot-debug
           path: ${{ env.APK }}
           if-no-files-found: error
+
