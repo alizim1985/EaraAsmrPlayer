@@ -194,6 +194,9 @@ dependencies {
     implementation("androidx.media3:media3-datasource:$media3_version")
     implementation("androidx.media3:media3-database:$media3_version")
 
+    // SMB2/SMB3 NAS access (non-root)
+    implementation("eu.agno3.jcifs:jcifs-ng:2.1.10")
+
     // Room
     implementation("androidx.room:room-runtime:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
